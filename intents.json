@@ -1,0 +1,45 @@
+{
+    "intents": [
+      {
+        "tag": "saudacao",
+        "patterns": ["Olá", "Oi", "Bom dia", "Boa tarde", "Boa noite"],
+        "responses": ["Olá! Como posso te ajudar?", "Oi! Em que posso te auxiliar hoje?", "Bem-vindo! Como posso te ajudar com seu projeto PIPE?"]
+      },
+      {
+        "tag": "despedida",
+        "patterns": ["Tchau", "Obrigado", "Valeu", "Até mais", "Até logo"],
+        "responses": ["Até logo! Se precisar de mais informações, estou à disposição.", "Foi um prazer ajudar! Boa sorte com seu projeto.", "Tchau! Se tiver mais dúvidas, estarei por aqui."]
+      },
+      {
+        "tag": "sobre_pipe",
+        "patterns": ["O que é o PIPE?", "Me fale sobre o PIPE", "Como funciona o PIPE?"],
+        "responses": ["O PIPE (Pesquisa Inovativa em Pequenas Empresas) é um programa da FAPESP que apoia pesquisa científica e tecnológica em empresas no estado de São Paulo.", "O Programa PIPE financia pesquisas inovadoras em empresas, ajudando no desenvolvimento de produtos, processos ou serviços inovadores."]
+      },
+      {
+        "tag": "quem_pode_participar",
+        "patterns": ["Quem pode participar do PIPE?", "Quais são os requisitos para participar?"],
+        "responses": ["Podem participar pequenas empresas sediadas no estado de São Paulo com até 250 funcionários, que tenham projetos de pesquisa inovadores.", "O PIPE é voltado para empresas que buscam desenvolver novas tecnologias e precisam de financiamento para pesquisa."]
+      },
+      {
+        "tag": "submissao_projeto",
+        "patterns": ["Como submeter um projeto?", "Onde posso enviar minha proposta?", "Como funciona a submissão?"],
+        "responses": ["A submissão do projeto PIPE é feita pelo sistema SAGe da FAPESP. Você precisa cadastrar sua empresa e submeter a proposta detalhada pelo portal.", "Os projetos devem ser submetidos eletronicamente no portal SAGe da FAPESP. Se precisar de ajuda com o processo, posso te orientar!"]
+      },
+      {
+        "tag": "documentos_necessarios",
+        "patterns": ["Quais documentos são necessários?", "Que documentos preciso enviar?"],
+        "responses": ["Os principais documentos incluem: descrição do projeto, orçamento detalhado, currículo dos pesquisadores envolvidos e comprovação de que a empresa se enquadra nos critérios do PIPE.", "Você precisará apresentar um projeto detalhado, incluindo metodologia, orçamento e justificativa técnica para a pesquisa."]
+      },
+      {
+        "tag": "prazos",
+        "patterns": ["Qual o prazo para submissão?", "Até quando posso enviar o projeto?"],
+        "responses": ["Os prazos variam conforme as chamadas abertas pela FAPESP. Recomendo verificar o site oficial para as datas mais recentes.", "Os prazos são definidos em chamadas públicas. Você pode conferir no site da FAPESP ou no portal SAGe."]
+      },
+      {
+        "tag": "valores_financiamento",
+        "patterns": ["Qual o valor do financiamento?", "Quanto posso receber pelo PIPE?"],
+        "responses": ["O financiamento depende da fase do PIPE. Na Fase 1, pode chegar a R$ 275 mil, enquanto na Fase 2, pode ser bem maior dependendo do projeto.", "Os valores variam conforme a fase do projeto. Você pode consultar os detalhes no edital vigente da FAPESP."]
+      }
+    ]
+  }
+  
