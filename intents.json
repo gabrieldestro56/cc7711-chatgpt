@@ -1,45 +1,188 @@
 {
-    "intents": [
-      {
-        "tag": "saudacao",
-        "patterns": ["Olá", "Ola", "Oi", "Bom dia", "Boa tarde", "Boa noite"],
-        "responses": ["Olá! Como posso te ajudar?", "Oi! Em que posso te auxiliar hoje?", "Bem-vindo! Como posso te ajudar com seu projeto PIPE?"]
-      },
-      {
-        "tag": "despedida",
-        "patterns": ["Tchau", "Obrigado", "Valeu", "Até mais", "Até logo"],
-        "responses": ["Até logo! Se precisar de mais informações, estou à disposição.", "Foi um prazer ajudar! Boa sorte com seu projeto.", "Tchau! Se tiver mais dúvidas, estarei por aqui."]
-      },
-      {
-        "tag": "sobre_pipe",
-        "patterns": ["O que é o PIPE?", "Me fale sobre o PIPE", "Como funciona o PIPE?"],
-        "responses": ["O PIPE (Pesquisa Inovativa em Pequenas Empresas) é um programa da FAPESP que apoia pesquisa científica e tecnológica em empresas no estado de São Paulo.", "O Programa PIPE financia pesquisas inovadoras em empresas, ajudando no desenvolvimento de produtos, processos ou serviços inovadores."]
-      },
-      {
-        "tag": "quem_pode_participar",
-        "patterns": ["Quem pode participar do PIPE?", "Quais são os requisitos para participar?"],
-        "responses": ["Podem participar pequenas empresas sediadas no estado de São Paulo com até 250 funcionários, que tenham projetos de pesquisa inovadores.", "O PIPE é voltado para empresas que buscam desenvolver novas tecnologias e precisam de financiamento para pesquisa."]
-      },
-      {
-        "tag": "submissao_projeto",
-        "patterns": ["Como submeter um projeto?", "Onde posso enviar minha proposta?", "Como funciona a submissão?"],
-        "responses": ["A submissão do projeto PIPE é feita pelo sistema SAGe da FAPESP. Você precisa cadastrar sua empresa e submeter a proposta detalhada pelo portal.", "Os projetos devem ser submetidos eletronicamente no portal SAGe da FAPESP. Se precisar de ajuda com o processo, posso te orientar!"]
-      },
-      {
-        "tag": "documentos_necessarios",
-        "patterns": ["Quais documentos são necessários?", "Que documentos preciso enviar?"],
-        "responses": ["Os principais documentos incluem: descrição do projeto, orçamento detalhado, currículo dos pesquisadores envolvidos e comprovação de que a empresa se enquadra nos critérios do PIPE.", "Você precisará apresentar um projeto detalhado, incluindo metodologia, orçamento e justificativa técnica para a pesquisa."]
-      },
-      {
-        "tag": "prazos",
-        "patterns": ["Qual o prazo para submissão?", "Até quando posso enviar o projeto?"],
-        "responses": ["Os prazos variam conforme as chamadas abertas pela FAPESP. Recomendo verificar o site oficial para as datas mais recentes.", "Os prazos são definidos em chamadas públicas. Você pode conferir no site da FAPESP ou no portal SAGe."]
-      },
-      {
-        "tag": "valores_financiamento",
-        "patterns": ["Qual o valor do financiamento?", "Quanto posso receber pelo PIPE?"],
-        "responses": ["O financiamento depende da fase do PIPE. Na Fase 1, pode chegar a R$ 275 mil, enquanto na Fase 2, pode ser bem maior dependendo do projeto.", "Os valores variam conforme a fase do projeto. Você pode consultar os detalhes no edital vigente da FAPESP."]
-      }
-    ]
-  }
-  
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "Olá",
+        "Ola",
+        "Oi",
+        "Bom dia",
+        "Boa tarde",
+        "Boa noite",
+        "E aí?",
+        "Salve",
+        "Fala aí"
+      ],
+      "responses": [
+        "Olá! Como posso ajudar você hoje?",
+        "Oi! Em que posso ser útil?",
+        "Bem-vindo! Estou aqui para tirar suas dúvidas sobre o PIPE."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Tchau",
+        "Obrigado",
+        "Valeu",
+        "Até mais",
+        "Até logo",
+        "Fui",
+        "Falou"
+      ],
+      "responses": [
+        "Até logo! Se precisar de algo mais, estou por aqui.",
+        "Foi um prazer ajudar! Boa sorte com seu projeto PIPE.",
+        "Tchau! Conte comigo para o que precisar."
+      ]
+    },
+    {
+      "tag": "sobre_pipe",
+      "patterns": [
+        "O que é o PIPE?",
+        "Me fale sobre o PIPE",
+        "Como funciona o PIPE?",
+        "Pode explicar o que é o PIPE?",
+        "Qual a definição do PIPE?"
+      ],
+      "responses": [
+        "O PIPE (Pesquisa Inovativa em Pequenas Empresas) é um programa da FAPESP que apoia pesquisas científicas e tecnológicas em empresas paulistas.",
+        "O PIPE financia projetos de pesquisa inovadores, auxiliando empresas na criação e desenvolvimento de novas tecnologias ou melhorias de processos."
+      ]
+    },
+    {
+      "tag": "quem_pode_participar",
+      "patterns": [
+        "Quem pode participar do PIPE?",
+        "Quais são os requisitos para participar?",
+        "Minha empresa pode participar?",
+        "Quem é elegível para o PIPE?"
+      ],
+      "responses": [
+        "Podem participar empresas sediadas em São Paulo com até 250 funcionários, que estejam desenvolvendo projetos de pesquisa inovadores.",
+        "O PIPE é direcionado para pequenas empresas que buscam inovar por meio de pesquisa e desenvolvimento."
+      ]
+    },
+    {
+      "tag": "submissao_projeto",
+      "patterns": [
+        "Como submeter um projeto?",
+        "Onde posso enviar minha proposta?",
+        "Como funciona a submissão?",
+        "Qual é o procedimento para submeter um projeto?",
+        "Como faço para enviar minha proposta?"
+      ],
+      "responses": [
+        "A submissão é realizada através do sistema SAGe da FAPESP. Você deve cadastrar sua empresa e enviar sua proposta detalhada pelo portal.",
+        "Os projetos devem ser submetidos eletronicamente via portal SAGe. Se precisar de assistência no processo, estou aqui para ajudar!"
+      ]
+    },
+    {
+      "tag": "documentos_necessarios",
+      "patterns": [
+        "Quais documentos são necessários?",
+        "Que documentos preciso enviar?",
+        "Quais os requisitos documentais?",
+        "Preciso de alguma documentação específica?"
+      ],
+      "responses": [
+        "Você deve enviar uma descrição detalhada do projeto, orçamento, currículo dos pesquisadores e comprovação de enquadramento nos critérios do PIPE.",
+        "A documentação inclui a proposta do projeto, orçamento detalhado, currículo dos responsáveis e outros documentos que comprovem a elegibilidade da empresa."
+      ]
+    },
+    {
+      "tag": "prazos",
+      "patterns": [
+        "Qual o prazo para submissão?",
+        "Até quando posso enviar o projeto?",
+        "Existe data limite para inscrição?",
+        "Qual o período para submissão?"
+      ],
+      "responses": [
+        "Os prazos variam de acordo com as chamadas públicas da FAPESP. Recomendo consultar o site oficial para as datas atualizadas.",
+        "Verifique o site da FAPESP ou o portal SAGe para confirmar os prazos de submissão, que podem mudar a cada chamada."
+      ]
+    },
+    {
+      "tag": "valores_financiamento",
+      "patterns": [
+        "Qual o valor do financiamento?",
+        "Quanto posso receber pelo PIPE?",
+        "Qual é o montante disponível?",
+        "Qual o aporte financeiro do PIPE?"
+      ],
+      "responses": [
+        "O valor do financiamento varia conforme a fase do PIPE. Na Fase 1, pode chegar a R$ 275 mil, e na Fase 2 os valores podem ser significativamente maiores.",
+        "Os valores dependem da etapa do projeto. Confira o edital vigente para obter detalhes sobre o financiamento disponível."
+      ]
+    },
+    {
+      "tag": "edital",
+      "patterns": [
+        "O que é um edital?",
+        "Como funciona o edital do PIPE?",
+        "Onde encontro o edital?",
+        "Detalhes do edital",
+        "Informações sobre edital do PIPE"
+      ],
+      "responses": [
+        "O edital é o documento que contém as regras e diretrizes para a submissão de projetos no PIPE. Recomendo ler atentamente para entender todos os requisitos.",
+        "No edital do PIPE você encontra informações sobre prazos, critérios de elegibilidade e regras de financiamento. É fundamental consultá-lo antes de submeter seu projeto."
+      ]
+    },
+    {
+      "tag": "status_projeto",
+      "patterns": [
+        "Como posso acompanhar o status do meu projeto?",
+        "Onde verificar o andamento do projeto?",
+        "Status da minha proposta",
+        "Como consultar o status do meu projeto?"
+      ],
+      "responses": [
+        "Você pode acompanhar o status do seu projeto pelo portal SAGe. Basta acessar sua conta e verificar as atualizações disponíveis.",
+        "O acompanhamento do projeto é feito online no sistema SAGe, onde são informadas as etapas e decisões referentes à sua proposta."
+      ]
+    },
+    {
+      "tag": "suporte_tecnico",
+      "patterns": [
+        "Estou com problemas no sistema",
+        "O sistema não está funcionando",
+        "Erro ao acessar o SAGe",
+        "Preciso de suporte técnico",
+        "Como resolver problemas técnicos no portal?"
+      ],
+      "responses": [
+        "Para questões técnicas, entre em contato com o suporte do portal SAGe ou consulte a seção de FAQ no site da FAPESP.",
+        "Se você enfrentar problemas técnicos no sistema SAGe, procure o suporte oficial ou verifique se há manutenção programada."
+      ]
+    },
+    {
+      "tag": "contato_fapesp",
+      "patterns": [
+        "Como entrar em contato com a FAPESP?",
+        "Telefone da FAPESP",
+        "E-mail para contato",
+        "Contato FAPESP"
+      ],
+      "responses": [
+        "Você pode encontrar os contatos oficiais da FAPESP no site institucional, na seção 'Fale Conosco'.",
+        "Para entrar em contato com a FAPESP, consulte o site oficial para obter os números de telefone e endereços de e-mail atualizados."
+      ]
+    },
+    {
+      "tag": "orientacoes_projeto",
+      "patterns": [
+        "Como estruturar meu projeto?",
+        "Quais dicas para elaborar a proposta?",
+        "Orientações para um bom projeto",
+        "Como posso melhorar meu projeto?",
+        "Sugestões para elaboração do projeto"
+      ],
+      "responses": [
+        "É importante apresentar uma metodologia clara, objetivos bem definidos e um orçamento realista. Revisar exemplos de projetos aprovados pode ajudar bastante.",
+        "Certifique-se de detalhar a proposta, apresentar justificativas sólidas e seguir as diretrizes do edital. Dicas de especialistas podem ser encontradas em guias de elaboração de projetos."
+      ]
+    }
+  ]
+}
