@@ -2,7 +2,7 @@
     "intents": [
       {
         "tag": "saudacao",
-        "patterns": ["Olá", "Oi", "Bom dia", "Boa tarde", "Boa noite"],
+        "patterns": ["Olá", "Ola", "Oi", "Bom dia", "Boa tarde", "Boa noite"],
         "responses": ["Olá! Como posso te ajudar?", "Oi! Em que posso te auxiliar hoje?", "Bem-vindo! Como posso te ajudar com seu projeto PIPE?"]
       },
       {
